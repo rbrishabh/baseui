@@ -5,7 +5,7 @@ This source code is licensed under the MIT license found in the
 LICENSE file in the root directory of this source tree.
 */
 // @flow
-import {styled} from '../styles/index.js';
+import {styled, hexToRgb} from '../styles/index.js';
 
 import type {SharedPropsT} from './types.js';
 
@@ -44,10 +44,9 @@ export const StyledNavItem = styled<SharedPropsT>('div', props => {
     $theme: {colors, sizing},
   } = props;
   return ({
-    backgroundColor: $active ? colors.primary : 'transparent',
-    backgroundImage: $active
-      ? `linear-gradient(0deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92))`
-      : null,
+    backgroundColor: $active
+      ? hexToRgb(colors.primary, '0.075')
+      : 'transparent',
     boxSizing: 'border-box',
     [$theme.direction === 'rtl'
       ? 'borderRightWidth'
