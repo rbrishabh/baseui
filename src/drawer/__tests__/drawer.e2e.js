@@ -12,7 +12,7 @@ const {mount, analyzeAccessibility} = require('../../../e2e/helpers');
 
 const selectors = {
   closeButton: 'button[aria-label="Close"]',
-  openDrawer: '.open-drawer-button',
+  openDrawer: '[data-e2e="open-drawer-button"]',
   selectInput: 'input[role="combobox"]',
   drawer: 'div[aria-label="drawer"]',
   selectDropDown: '[role="listbox"]',
