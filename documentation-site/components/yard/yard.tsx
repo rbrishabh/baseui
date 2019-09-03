@@ -394,7 +394,7 @@ export default withRouter(
                   marginTop: `${theme.sizing.scale800}`,
                   boxSizing: 'border-box',
                   border: editorFocused
-                    ? `2px solid ${theme.colors.primary400}`
+                    ? `2px solid ${theme.colors.primary}`
                     : `2px solid ${
                         theme.name.startsWith('light-theme')
                           ? theme.colors.mono200
