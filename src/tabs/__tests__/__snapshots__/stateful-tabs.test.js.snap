@@ -113,12 +113,12 @@ exports[`StatefulTabs basic render w/ SEO: Stateful tabs render all tab content 
                           test-style={
                             Object {
                               ":focus": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
                               ":hover": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
-                              "borderBottom": "2px solid $theme.colors.primary400",
+                              "borderBottom": "2px solid $theme.colors.primary",
                               "boxSizing": "border-box",
                               "color": "$theme.colors.colorPrimary",
                               "cursor": "pointer",
@@ -190,10 +190,10 @@ exports[`StatefulTabs basic render w/ SEO: Stateful tabs render all tab content 
                           test-style={
                             Object {
                               ":focus": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
                               ":hover": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
                               "borderBottom": "none",
                               "boxSizing": "border-box",
@@ -267,10 +267,10 @@ exports[`StatefulTabs basic render w/ SEO: Stateful tabs render all tab content 
                           test-style={
                             Object {
                               ":focus": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
                               ":hover": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
                               "borderBottom": "none",
                               "boxSizing": "border-box",
@@ -541,10 +541,10 @@ exports[`StatefulTabs basic render with initial state: Stateful tabs render corr
                           test-style={
                             Object {
                               ":focus": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
                               ":hover": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
                               "borderBottom": "none",
                               "boxSizing": "border-box",
@@ -618,12 +618,12 @@ exports[`StatefulTabs basic render with initial state: Stateful tabs render corr
                           test-style={
                             Object {
                               ":focus": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
                               ":hover": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
-                              "borderBottom": "2px solid $theme.colors.primary400",
+                              "borderBottom": "2px solid $theme.colors.primary",
                               "boxSizing": "border-box",
                               "color": "$theme.colors.colorPrimary",
                               "cursor": "pointer",
@@ -695,10 +695,10 @@ exports[`StatefulTabs basic render with initial state: Stateful tabs render corr
                           test-style={
                             Object {
                               ":focus": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
                               ":hover": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
                               "borderBottom": "none",
                               "boxSizing": "border-box",
@@ -954,12 +954,12 @@ exports[`StatefulTabs basic render: Stateful tabs render correctly 1`] = `
                           test-style={
                             Object {
                               ":focus": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
                               ":hover": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
-                              "borderBottom": "2px solid $theme.colors.primary400",
+                              "borderBottom": "2px solid $theme.colors.primary",
                               "boxSizing": "border-box",
                               "color": "$theme.colors.colorPrimary",
                               "cursor": "pointer",
@@ -1031,10 +1031,10 @@ exports[`StatefulTabs basic render: Stateful tabs render correctly 1`] = `
                           test-style={
                             Object {
                               ":focus": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
                               ":hover": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
                               "borderBottom": "none",
                               "boxSizing": "border-box",
@@ -1108,10 +1108,10 @@ exports[`StatefulTabs basic render: Stateful tabs render correctly 1`] = `
                           test-style={
                             Object {
                               ":focus": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
                               ":hover": Object {
-                                "color": "$theme.colors.primary400",
+                                "color": "$theme.colors.primary",
                               },
                               "borderBottom": "none",
                               "boxSizing": "border-box",
