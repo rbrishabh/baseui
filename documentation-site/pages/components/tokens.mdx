@@ -1,0 +1,94 @@
+<!--
+Copyright (c) 2018-2019 Uber Technologies, Inc.
+
+This source code is licensed under the MIT license found in the
+LICENSE file in the root directory of this source tree.
+-->
+
+import Example from '../../components/example';
+import Layout from '../../components/layout';
+import BasicExample from 'examples/tokens/basic.js';
+import Exports from '../../components/exports';
+import * as TokenExports from 'baseui/tokens';
+
+export default Layout;
+
+# Tokens
+
+You can import Base Web design tokens from `baseui/tokens`. The idea of a "design token" originates with the [Lightning Design System](https://www.lightningdesignsystem.com/design-tokens/). Here is how they describe it in their documentation:
+
+> Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.
+
+Currently we only export colors from `baseui/tokens`. In the future, we may add more types of values into the module or move it into a separate package to support other platforms.
+
+## Colors
+
+<div
+  style={{
+    fontFamily: 'Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace',
+    fontSize: 14,
+    lineHeight: 1,
+  }}
+>
+  {Object.entries(TokenExports.colors).map(([name, value]) => (
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        borderBottom: `solid 1px ${value}`,
+      }}
+    >
+      <div
+        style={{
+          backgroundColor: value,
+          width: 100,
+          height: 50,
+          marginRight: 20,
+        }}
+      ></div>
+      <div style={{flexGrow: 1}}>{name}</div>
+      <div>{value}</div>
+    </div>
+  ))}
+</div>
+
+Ideally these are the only colors you would use in a Base Web project. Note, that not every color is used in a component. This is simply the complete set of Base colors.
+
+## Examples
+
+<Example title="Importing and styling" path="tokens/basic.js">
+  <BasicExample />
+</Example>
+
+You can import the module and use a token directly, either when styling a component or setting up your theme. This works fine because tokens do not change at run-time (and hopefully not often in general).
+
+Some teams may decide to alias tokens on their theme object for slightly easier access when styling components. Here is how that might look in pseudo-code, adapting the above example:
+
+```js
+// theme setup...
+import {createTheme, lightThemePrimitives} from 'baseui';
+import {colors as colorTokens} from 'baseui/tokens';
+
+export default createTheme(lightThemePrimitives, {
+  colors: {
+    ...colorTokens,
+  },
+});
+
+// some component later on...
+import React from 'react';
+import {useStyletron} from 'baseui';
+
+export default () => {
+  const [useCss, theme] = useStyletron();
+  return (
+    <div className={useCss({color: theme.colors.blue400})}>
+      This text is Uber blue!
+    </div>
+  );
+};
+```
+
+We don't recommend this pattern, however. In our projects, we prefer to acknowledge the static nature of a design token and just import it where ever it is needed.
+
+The theme layer is intended more for assigning values semantic meaning, such as `borderFocus` or `primary`. Also, keep in mind that adding lots of properties to the theme object may harm performance. For more on theming check out [the documentation](/guides/theming).
